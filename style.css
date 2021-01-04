@@ -1,0 +1,26 @@
+:root {
+   --dark-primary: #2f3e46;
+   --dark-secondary: #354f52;
+   --light-primary: #cad2c5;
+   --light-secondary: #84a98c;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Heebo', sans-serif;
+}
+
+h1, h2, h3 {
+   font-family: 'Archivo', sans-serif;
+
+}
+
+body {
+   font-family: helvetica, sans-serif;
+   margin: 0 auto;
+   width: 750px;
+   background-color: var(--dark-primary);
+   color: var(--light-primary);
+}
