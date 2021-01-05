@@ -57,9 +57,9 @@ button {
 }
 
 .valid {
-   border: 3px red solid;
+   border: 3px green solid;
 }
 
 .invalid {
-   border: 3px greed solid
+   border: 3px red solid
 }
