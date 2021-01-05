@@ -34,7 +34,6 @@ form {
 }
 
 form input {
-   margin-bottom: 20px;
    padding: 4px;
 }
 
@@ -62,4 +61,11 @@ button {
 
 .invalid {
    border: 3px red solid
+}
+
+.error {
+   color: red;
+   font-size: 12px;
+   font-weight: 300;
+   height: 20px;
 }
