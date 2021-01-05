@@ -19,8 +19,47 @@ h1, h2, h3 {
 
 body {
    font-family: helvetica, sans-serif;
-   margin: 0 auto;
+   margin: 100px auto;
+   padding: 25px;
    width: 750px;
    background-color: var(--dark-primary);
    color: var(--light-primary);
+   border: 2px solid var(--light-primary)
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+   margin-top: 20px;
+}
+
+form input {
+   margin-bottom: 20px;
+   padding: 4px;
+}
+
+form label {
+   font-size: 80%;
+   font-weight: 700;
+}
+
+.form-buttons {
+   display: flex;
+   justify-content: space-between;
+}
+
+button {
+   width: 49%;
+   height: 40px;
+   background-color: var(--light-primary);
+   color: var(--dark-primary);
+   font-weight: 700;
+}
+
+.valid {
+   border: 3px red solid;
+}
+
+.invalid {
+   border: 3px greed solid
 }
