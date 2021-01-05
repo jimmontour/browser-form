@@ -12,8 +12,26 @@
 
 <body>
    <h1>Browser Form Demo</h1>
-   <form action="GET">
-      <label for="email"></label>
+   <form>
+      <label for="email">Email (required)</label>
+      <input id="email" type="email" name="email" required>
+
+      <label for="country">Country (required)</label>
+      <input id="country" type="text" name="country" required>
+
+      <label for="zipcode">Zipcode (required)</label>
+      <input type="number" min="10000" max="99999" id="zipcode" name="zipcode" required step="1">
+
+      <label for="password">Password (required)</label>
+      <input type="password" id="password" name="password" required min="6" max="20">
+
+      <label for="confirm-password">Confirm Password (required)</label>
+      <input type="password" name="confirm-password" id="confirm-password" required min="6" max="20">
+
+      <div class="form-buttons">
+         <button type="submit" id="submit">Submit</button>
+         <button type="reset">Reset</button>
+      </div>
    </form>
    <script src="script.js"></script>
 </body>
