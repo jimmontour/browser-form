@@ -15,22 +15,31 @@
    <form>
       <label for="email">Email (required)</label>
       <input id="email" type="email" name="email" required>
+      <div class="error" id="email-error"></div>
 
       <label for="country">Country (required)</label>
       <input id="country" type="text" name="country" required>
+      <div class="error" id="country-error"></div>
 
       <label for="zipcode">Zipcode (required)</label>
       <input type="number" min="10000" max="99999" id="zipcode" name="zipcode" required step="1">
+      <div class="error" id="zipcode-error"></div>
 
       <label for="password">Password (required)</label>
       <input type="password" id="password" name="password" required min="6" max="20">
+      <div class="error" id="password-error"></div>
 
       <label for="confirm-password">Confirm Password (required)</label>
       <input type="password" name="confirm-password" id="confirm-password" required min="6" max="20">
+      <div class="error" id="confirm-password-error"></div>
 
       <div class="form-buttons">
          <button type="submit" id="submit">Submit</button>
          <button type="reset">Reset</button>
+      </div>
+      <div class="">
+         <h3 class="error-message"></h3>
+         <ul class="error-list"></ul>
       </div>
    </form>
    <script src="script.js"></script>
